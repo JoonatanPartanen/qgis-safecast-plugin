@@ -246,7 +246,7 @@ class SafecastDockWidget(QtGui.QDockWidget, FORM_CLASS):
             # action canceled
             return
 
-        if not filePath.endswith('.LOG'):
+        if not filePath.upper().endswith('.LOG'):
             # add missing extension if missing
             filePath += '.LOG'
 
